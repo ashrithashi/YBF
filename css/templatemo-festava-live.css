@@ -287,7 +287,9 @@ strong {
   CUSTOM BUTTON               
 -----------------------------------------*/
 .custom-btn {
-  background: var(--custom-btn-bg-color);
+  background-color:black;
+  background-image: url(/images/texture-back.png);
+  background-blend-mode:hard-light;
   border: 2px solid transparent;
   border-radius: var(--border-radius-large);
   color: var(--white-color);
@@ -299,7 +301,7 @@ strong {
 }
 
 .custom-btn:hover {
-  background: var(--custom-btn-bg-hover-color);
+  background: rgb(238, 199, 4);
   color: var(--white-color);
 }
 
@@ -311,7 +313,7 @@ strong {
 
 .navbar-expand-lg .navbar-nav .nav-link.custom-btn:hover,
 .custom-border-btn:hover {
-  background: var(--custom-btn-bg-hover-color);
+  background:  rgb(238, 199, 4);
   border-color: transparent;
   color: var(--white-color);
 }
@@ -362,7 +364,9 @@ strong {
 }
 
 .sticky-wrapper.is-sticky .navbar {
-  background-color: var(--dark-color);
+  background-color:black;
+  background-image: url(/images/texture4.png);
+  background-blend-mode:hard-light;
 }
 
 .navbar {
@@ -395,7 +399,7 @@ strong {
 
 .navbar-nav .nav-link.active, 
 .navbar-nav .nav-link:hover {
-  color: var(--secondary-color);
+  color:  rgb(238, 199, 4);
 }
 
 .navbar-toggler {
@@ -546,7 +550,7 @@ strong {
   TICKET               
 -----------------------------------------*/
 .ticket-section {
-  background-image: url('../images/nicholas-green-unsplash-blur.jpg');
+  background-image: url('/images/texture8.png');
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -554,7 +558,7 @@ strong {
 }
 
 .ticket-form {
-  background: var(--white-color);
+  background-image: url('/images/texture8.png');
   border-radius: var(--border-radius-medium);
   padding: 50px;
 }
@@ -575,6 +579,12 @@ strong {
   margin-left: 35px;
   width: 100%;
   height: 100%;
+}
+.ticket1-section {
+ 
+  background-size:contain;
+  position: relative;
+  padding-top: 130px;
 }
 
 
@@ -641,7 +651,7 @@ strong {
     transform: translateY(0);
     opacity: 1;
   }
-/* sssssssssssssss */
+
   .artists-hover {
     top: 2px;
     left: 0;
@@ -684,6 +694,7 @@ strong {
 
 .schedule-table thead th {
   background-color: var(--secondary-color);
+  color: #4c3d05;
 }
 
 .schedule-table th,
@@ -691,6 +702,7 @@ strong {
 .schedule-table td {
   border-bottom-color: #363a3e;
   padding: 30px;
+  background-image: url('/images/texture101.png');
 }
 
 .schedule-table tr:last-child th,
@@ -743,6 +755,20 @@ strong {
   display: table-cell; 
   width: auto; 
 }
+
+.custom-list{
+    list-style-type: none;
+    margin: auto;
+    
+    
+}
+  ul li.bi::before {
+    content: "\2713"; /* Unicode for checkmark symbol */
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    color: #000000;
+  }
 @media screen and (max-width: 768px) {
   
  
@@ -768,6 +794,7 @@ strong {
   border-radius: var(--border-radius-medium);
   position: relative;
   padding: 50px;
+  cursor: pointer;
 }
 
 .pricing-thumb h3 small {
@@ -839,7 +866,9 @@ strong {
 }
 
 .custom-form button[type="submit"] {
-  background: var(--custom-btn-bg-color);
+  background-color:black;
+  background-image: url(/images/texture4.png);
+  background-blend-mode:hard-light;;
   border: none;
   border-radius: var(--border-radius-large);
   color: var(--white-color);
@@ -851,7 +880,7 @@ strong {
 
 .custom-form button[type="submit"]:hover,
 .custom-form button[type="submit"]:focus {
-  background: var(--custom-btn-bg-hover-color);
+  background:  rgb(238, 199, 4);
   border-color: transparent;
 }
 
@@ -861,15 +890,19 @@ strong {
   SITE FOOTER              
 -----------------------------------------*/
 .site-footer {
-  background-color: var(--dark-color);
+  background-color:black;
+  background-image: url(/images/texture4.png);
+  background-blend-mode:hard-light;
   position: relative;
   overflow: hidden;
   padding-bottom: 30px;
 }
 
 .site-footer-top {
-  background-color: var(--secondary-color);
-  background-image: url('../images/nainoa-shizuru-NcdG9mK3PBY-unsplash.jpg');
+  background-color: rgb(238, 199, 4);
+  background-image: url(/images/texture3.png);
+  background-blend-mode:multiply;
+ 
   background-repeat: no-repeat;
   margin-bottom: 70px;
   padding-top: 30px;
@@ -882,7 +915,8 @@ strong {
 }
 
 .site-footer-title {
-  color: var(--primary-color); 
+  color:  rgb(238, 199, 4); 
+  
 }
 
 .site-footer-link,
@@ -920,7 +954,7 @@ strong {
 }
 
 .social-icon-link {
-  background: var(--secondary-color);
+  background: black;
   border-radius: var(--border-radius-large);
   color: var(--white-color);
   font-size: var(--copyright-font-size);
@@ -1006,7 +1040,9 @@ strong {
   }
   
   .navbar {
-    background-color: black;
+    background-color:black;
+    background-image: url(/images/texture4.png);
+    background-blend-mode:hard-light;
   }
   .navbar-brand {
     font-size: 16px; 
@@ -1081,3 +1117,93 @@ strong {
   }
 }
 
+/*--------------------
+    page Texture 
+-----------------------*/
+
+.texture{
+  background-color:transparent;
+  background-image: url(/images/texture102.png);
+ 
+}
+
+.texture1{
+  background-color:transparent;
+  background-image: url(/images/texture8.png);
+ 
+}
+
+
+ /* Style for the visible answer */
+ .answer-content {
+  display: none;
+  margin-top: 10px;
+  list-style-type: none;
+}
+
+/* Style for the visible answer */
+.answer-content.show {
+  display: block;
+  list-style-type: none;
+  
+}
+
+/* Style for the questions */
+.question {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Style for the answers */
+.answer {
+  margin: 0;
+  font-size: 14px;
+  list-style-type: none;
+  
+}
+.answer-pop li{
+  list-style-type: none;
+  color: #c00808;
+  font-weight:500;
+}
+
+/*------------
+ Banner 
+ --------------*/
+.banner-container {
+  background-color:black;
+  background-image: url(/images/texture4.png);
+  background-blend-mode:hard-light;
+  padding: 2px;
+  text-align: center;
+  display: flex;
+}
+
+/* Style for the continuous flow of text */
+.continuous-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: rgb(249, 249, 249);
+  animation: textFlow 15s linear infinite;
+  animation-timing-function: linear;
+}
+
+/* Keyframes for the continuous text flow animation */
+@keyframes textFlow {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-100%); }
+}
+@media screen and (max-width: 768px) {
+  .continuous-text {
+      font-size: 10px;
+      animation-duration: 15s;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .continuous-text {
+      font-size: 9px;
+      animation-duration: 20s;
+  }
+}
