@@ -287,12 +287,12 @@ strong {
   CUSTOM BUTTON               
 -----------------------------------------*/
 .custom-btn {
-  background-color:black;
-  background-image: url(/images/texture-back.png);
+  background-color:rgba(255, 255, 255, 0.119);
+  background-image: url(/images/tek.png);
   background-blend-mode:hard-light;
   border: 2px solid transparent;
   border-radius: var(--border-radius-large);
-  color: var(--white-color);
+  color: #f9cb16;
   font-size: var(--btn-font-size);
   font-weight: var(--font-weight-bold);
   line-height: normal;
@@ -364,9 +364,9 @@ strong {
 }
 
 .sticky-wrapper.is-sticky .navbar {
-  background-color:black;
+  background-color:#0c0c0c;
   background-image: url(/images/texture4.png);
-  background-blend-mode:hard-light;
+  background-blend-mode:color-dodge;
 }
 
 .navbar {
@@ -878,7 +878,7 @@ strong {
   margin-bottom: 0;
 }
 
-.custom-form button[type="submit"]:hover,
+.custom-form button[type="submit"]:hover,x
 .custom-form button[type="submit"]:focus {
   background:  rgb(238, 199, 4);
   border-color: transparent;
@@ -890,18 +890,18 @@ strong {
   SITE FOOTER              
 -----------------------------------------*/
 .site-footer {
-  background-color:black;
+  background-color:#0c0c0c;
   background-image: url(/images/texture4.png);
-  background-blend-mode:hard-light;
+  background-blend-mode:color-dodge;
   position: relative;
   overflow: hidden;
   padding-bottom: 30px;
 }
 
 .site-footer-top {
-  background-color: rgb(238, 199, 4);
-  background-image: url(/images/texture3.png);
-  background-blend-mode:multiply;
+  background-color:#f9cb16;
+  background-image: url(/ima);
+  
  
   background-repeat: no-repeat;
   margin-bottom: 70px;
@@ -1040,9 +1040,9 @@ strong {
   }
   
   .navbar {
-    background-color:black;
-    background-image: url(/images/texture4.png);
-    background-blend-mode:hard-light;
+    background-color:#0c0c0c;
+  background-image: url(/images/texture4.png);
+  background-blend-mode:color-dodge;
   }
   .navbar-brand {
     font-size: 16px; 
@@ -1261,3 +1261,189 @@ article {
     animation-duration:1s;
     animation-delay: 1.5s
 }
+
+/* -------------
+Tv Animation
+------------- */
+
+iframe {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border: 10px solid;
+  border-radius: 32px;
+}
+
+.television {
+  width: 450px;
+  margin: 0 auto;
+  display: block;
+}
+
+.television__top {
+  width: 40%;
+  margin: auto;
+  position: relative;
+}
+
+.television__antenna {
+  width: 5px;
+  height: 100px;
+  background-color: #3b3733;
+  margin-bottom: -10px;
+}
+
+.television__antenna--left {
+  transform: rotate(-30deg);
+  float: left;
+}
+
+.television__antenna--right {
+  transform: rotate(30deg);
+  float: right;
+}
+
+.television__antenna__base {
+  height: 20px;
+  background-color: #3b3733;
+  border-top-left-radius: 48px;
+  border-top-right-radius: 48px;
+  margin-bottom: 10px;
+  clear: both;
+  position: relative;
+  z-index: 2;
+}
+
+.television__center {
+   position: relative;
+   z-index: 1;
+   width: 350px;
+   height: 200px;
+   background-color: #7a4e27;
+   border: solid 3px #eef4c4;
+   box-shadow: -10px -10px #d64832;
+   border-radius: 48px;
+   margin: 0 auto;
+   padding: 10px 15px;
+}
+
+.television__screen {
+   width: 230px;
+   height: 170px;
+   background-color: #eed5b6;
+   border-radius: 48px;
+   float: left;
+  
+}
+
+.television__channels-wrapper {
+   width: 70px;
+   height: 170px;
+   background-color: #efd6b7;
+   border-radius: 48px;
+   float: right;
+}
+
+.television__channels {
+   padding: 0;
+}
+
+.television__channel {
+   list-style-type: none;
+   background-color: #7f4b23;
+   width: 25px;
+   height: 25px;
+   border-radius: 50%;
+   margin: 5px;
+   float: left;
+   position: relative;
+}
+
+.television__channel a {
+   display: block;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   background-color: #e6a146;
+   width: 12px;
+   height: 12px;
+   border-radius: 50%;
+}
+
+.television__channel a:active {
+   box-shadow: inset rgba(255,255,255,0.6) 0 2px 2px,
+               inset rgba(0,0,0,0.15) 0 -2px 5px, /* inner shadow */
+          rgba(100,100,100,0.6) 0 2px 1px,
+               rgba(100,100,100,0.6) 0 2px 1px; /* color border */
+}
+
+.television__base {
+   width: 60%;
+   margin: auto;
+}
+
+.television__base:after {
+   clear: both;
+   content: "";
+   display: table;
+}
+
+.television__foot {
+   width: 20px;
+   height: 70px;
+  margin-top: -20px;
+   background-color: #7d4d25;
+   border: solid 3px #eed5b6;
+   border-radius: 48px;
+}
+
+.television__foot--left {
+   transform: rotate(30deg);
+   float: left;
+}
+
+.television__foot--right {
+   transform: rotate(-30deg);
+   float: right;
+}
+
+.image-container {
+  float: right; 
+}
+
+.image-container img {
+  width: 200px; 
+  height: auto; 
+}
+
+.text-container {
+  float: left; /* Float the text container to the left */
+}
+
+@media (max-width: 768px) {
+  .television {
+    display: none;
+  }
+}
+
+
+/* For Responsive screen 
+@media only screen and (max-width: 480px) {
+  .television__screen {
+    width: 75%;
+    height: 170px;
+  }
+  .television__channels-wrapper {
+    width: 70px;
+    height: 120px;
+ }
+ .television {
+  width: 100%;
+  max-width: 450px; /* Limit the maximum width to 450px to prevent the television from becoming too large on larger screens */
+}
+}
+ */
+
+
