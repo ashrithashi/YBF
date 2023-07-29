@@ -300,7 +300,7 @@ strong {
   padding: 10px 20px;
 }
 .custom-btn1 {
-  background-color:rgba(255, 255, 255, 0.119);
+  background-color:rgba(255, 255, 255, 0.322);
   background-image: url(/images/tek.png);
   background-blend-mode:hard-light;
   border: 2px solid transparent;
@@ -314,6 +314,10 @@ strong {
 }
 
 .custom-btn:hover {
+  background: rgb(238, 199, 4);
+  color: var(--white-color);
+}
+.custom-btn1:hover {
   background: rgb(238, 199, 4);
   color: var(--white-color);
 }
@@ -1149,6 +1153,12 @@ strong {
 .texture1{
   background-color:transparent;
   background-image: url(/images/texture8.png);
+ 
+}
+
+.texture2{
+  background-color:transparent;
+  background-image: url(/images/texture6.png);
  
 }
 
