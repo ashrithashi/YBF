@@ -91,13 +91,18 @@ h6 {
 p {
   color: var(--p-color);
   font-size: var(--p-font-size);
-  font-weight: var(--font-weight-light);
+  font-weight: bold;
 }
 
 ul li {
   color: var(--p-color);
   font-size: var(--p-font-size);
-  font-weight: var(--font-weight-light);
+  font-weight:500;
+}
+ol li {
+  color: rgb(204, 10, 10);
+  font-size: var(--p-font-size);
+  font-weight:500;
 }
 
 a, 
@@ -1019,7 +1024,7 @@ strong {
 }
 
 .social-icon-link {
-  background: black;
+  background: linear-gradient(to bottom, #3A5795 0%, #2B4886 100%);
   border-radius: var(--border-radius-large);
   color: var(--white-color);
   font-size: var(--copyright-font-size);
@@ -1044,6 +1049,39 @@ strong {
 .social-icon-link span:hover::before{
   animation: spinAround 2s linear infinite;
 }
+
+
+.social-icon-link1 {
+  background: #f09433; 
+background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  border-radius: var(--border-radius-large);
+  color: var(--white-color);
+  font-size: var(--copyright-font-size);
+  display: block;
+  margin-right: 10px;
+  text-align: center;
+  width: 35px;
+  height: 35px;
+  line-height: 36px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.social-icon-link1:hover {
+  background: var(--primary-color);
+  color: var(--white-color);
+}
+
+.social-icon-link1 span {
+  display: block;
+}
+
+.social-icon-link1 span:hover::before{
+  animation: spinAround 2s linear infinite;
+}
+
 .social-share i {
   font-size: 35px; /* Adjust the size of the arrow icon as needed */
   animation: bounce 1.5s infinite;
@@ -1204,6 +1242,12 @@ strong {
  
 }
 
+.texture3{
+  background-color:transparent;
+  background-image: url(/images/texture7.png);
+ 
+}
+
 
  /* Style for the visible answer */
  .answer-content {
@@ -1244,7 +1288,7 @@ strong {
  --------------*/
 
 article {
-  background-color:rgb(236, 26, 61);
+  background-color:rgb(242, 6, 89);
   
   max-width: 100%;
   overflow: hidden;
