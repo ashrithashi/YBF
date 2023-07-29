@@ -1203,9 +1203,8 @@ strong {
  --------------*/
 
 article {
-  background-color:black;
-  background-image: url(/images/texture4.png);
-  background-blend-mode:hard-light;
+  background-color:rgb(236, 26, 61);
+  
   max-width: 100%;
   overflow: hidden;
   position: relative;
