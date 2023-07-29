@@ -295,7 +295,7 @@
 
 
                                     <hr> -->
-                                    <p style="color:rgb(83, 60, 8);">
+                                    <p style="color:brown;">
                                         <strong>Mission</strong>&nbsp;
                                        
                                     </p>
@@ -320,7 +320,7 @@
                                 </div>
 
                                 <div class="artists-hover"> -->
-                                    <p style="color:rgb(83, 60, 8);">
+                                    <p style="color:brown;">
                                         <strong>Vision</strong> 
 
                                     <p >
@@ -552,13 +552,13 @@
             <section class="pricing-section section-padding section-bg texture" id="section_5">
                 <div class="container">
                     <div class="row">
-                            <h1>FAQ</h1>
+                            <h1 style="color: brown;">FAQ</h1>
                         <div class="col-lg-8 col-13">
                             <div class="pricing-thumb">
                                 <div class="" >
                                     <div class="faq-box">
                                         <!-- Question 1 -->
-                                        <h3 onclick="toggleAnswer('answer1')" style="color:darkolivegreen;">+ How does the billing work?</h3>
+                                        <h3 onclick="toggleAnswer('answer1')" style="color:darkolivegreen;"><span id="plusminus1">+</span> How does the billing work?</h3>
                                         <!-- Answer 1 -->
                                         <div id="answer1" class="answer-content">
                                             <ul class="answer-pop">
@@ -568,7 +568,7 @@
                                     
                                     <div class="faq-box">
                                         <!-- Question 2 -->
-                                        <h3 onclick="toggleAnswer('answer2')">+ What is the refund policy?</h3>
+                                        <h3 onclick="toggleAnswer('answer2')"><span id="plusminus2">+</span> What is the refund policy?</h3>
                                         <!-- Answer 2 -->
                                         <div id="answer2" class="answer-content">
                                             <ul class="answer-pop">
@@ -579,7 +579,7 @@
 
                                     <div class="faq-box">
                                         <!-- Question 3 -->
-                                        <h3 onclick="toggleAnswer('answer3')">+ How do I join?</h3>
+                                        <h3 onclick="toggleAnswer('answer3')"><span id="plusminus3">+</span> How do I join?</h3>
                                         <!-- Answer 3 -->
                                     <div id="answer3" class="answer-content">
                                         <ul class="answer-pop">
@@ -593,7 +593,7 @@
                                     
                                         <div class="faq-box">
                                         <!-- Question 4 -->
-                                        <h3 onclick="toggleAnswer('answer4')">+ How much does it cost?</h3>
+                                        <h3 onclick="toggleAnswer('answer4')"><span id="plusminus4">+</span> How much does it cost?</h3>
                                         <!-- Answer 4 -->
                                         <div id="answer4" class="answer-content">
                                             <ul class="answer-pop">
@@ -609,7 +609,7 @@
                                     
                                     <div class="faq-box">
                                         <!-- Question 5 -->
-                                        <h3 onclick="toggleAnswer('answer5')">+ Can I join if I am not an entrepreneur?</h3>
+                                        <h3 onclick="toggleAnswer('answer5')"><span id="plusminus5">+</span> Can I join if I am not an entrepreneur?</h3>
                                         <!-- Answer 5 -->
                                         <div id="answer5" class="answer-content">
                                             <ul class="answer-pop">
@@ -626,10 +626,13 @@
                                     <script>
                                         function toggleAnswer(answerId) {
                                             var answer = document.getElementById(answerId);
+                                            var plusminus = document.getElementById("plusminus" + answerId.slice(-1));
                                             if (answer.classList.contains('show')) {
                                                 answer.classList.remove('show');
+                                                plusminus.textContent = '+';
                                             } else {
                                                 answer.classList.add('show');
+                                                plusminus.textContent = '-';
                                             }
                                         }
                                     </script>
