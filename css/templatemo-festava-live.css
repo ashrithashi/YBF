@@ -1243,8 +1243,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', end
 }
 
 .texture3{
-  background-color:transparent;
-  background-image: url(/images/texture7.png);
+  background-color:black;
+  background-image: url(/images/te.png);
  
 }
 
